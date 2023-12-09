@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosvilla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Serif+Display:wght@700;800&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body class="font-Lato bg-light3">
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="container">
+            <div class="header-wrapper flex justify-between items-center xl:px-24 px-0 lg:py-6 py-3">
+                <div class="menu-trigger md:hidden block cursor-pointer" onclick="openMenu()">
+                    <img src="../src/img/menu-trigger.svg" width="40px" alt="">
+                </div>
+                <div class="navigations-items md:static fixed md:opacity-100 opacity-0 md:visible invisible text-center md:h-auto h-screen md:overflow-visible overflow-hidden md:bg-transparent bg-light3 mobile-navigation top-0 md:z-auto -left-96 w-full bottom-0 transition-all duration-500 ease-in-out md:block flex justify-center items-center" id="mobileNav">
+                    <ul class="flex md:flex-row flex-col justify-between">
+                        <li class="md:mb-0 mb-3"><a href="" class="md:text-sm font-normal text-brown hover:text-black text-2xl transition-all duration-300 ease-in">Home</a></li>
+                        <li class="md:mb-0 mb-3"><a href="" class="md:text-sm font-normal text-brown hover:text-black text-2xl transition-all duration-300 ease-in">Overnachten</a></li>
+                        <li class="md:mb-0 mb-3"><a href="" class="md:text-sm font-normal text-brown hover:text-black text-2xl transition-all duration-300 ease-in">De Twentse Bosvilla’s</a></li>
+                        <li class="md:mb-0 mb-3"><a href="" class="inline-flex items-center md:text-sm font-normal text-brown hover:text-black text-2xl transition-all duration-300 ease-in">Ontdek de omgeving <img src="../src/img/dropdown-arrow.svg" class="ml-2.5" alt=""></a></li>
+                        <li class="md:mb-0 mb-3"><a href="" class="md:text-sm font-normal text-brown hover:text-black text-2xl transition-all duration-300 ease-in">Contact</a></li>
+                    </ul>
+                    <div class="md:hidden block cancel absolute right-4 top-4 cursor-pointer" onclick="openMenu()">
+                        <img src="../src/img/cancel.svg" class="w-8" alt="">
+                    </div>
+                </div>
+                <div class="actions ml-16">
+                    <a href="" class="rounded-lg bg-light border border-light2 py-2.5 px-4 text-sm font-bold text-white inline-flex items-center justify-center">RESERVEER <img src="../src/img/arrow-right.svg" class="ml-1" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+    <!-- BANNER -->
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content bg-cover bg-center md:py-28 sm:py-24 py-20 bg-banner relative rounded-3xl backdrop-blur">
+                <div class="absolute right-0 bottom-0">
+                    <img src="../src/img/foreground.svg" class="sm:w-auto w-56" alt="">
+                </div>
+                <div class="logo flex justify-center">
+                    <img src="../src/img/banner-logo.svg" alt="">
+                </div>
+                <div class="title text-center">
+                    <h2 class="xl:text-7xl lg:text-5xl md:text-4xl text-3xl font-extrabold text-white XL:leading-extra-line leading-normal font-Noto-Serif">De Twentse <br> Bosvilla</h2>
+                    <p class="xl:w-1/2 w-full mx-auto md:text-base text-sm font-normal md:leading-6 leading-normal md:px-0 px-8 text-white pt-5">Middenin het Twentse coulissenlandschap vind je onze bosvilla’s. 
+                    Verdekt en omringd door weilanden en immense eiken. In de Twentse bosvilla brengen we de eenvoud en natuur samen. Vrij van tierelantijntjes, maar met wifi. Het gaat erom dat jij kunt opladen. Hoe? Dat is aan jou: uitslapen, reeën spotten of uren door het bos struinen. Het kan allemaal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER -->
+
+    <!-- SMALL CONTACT -->
+
+    <div class="container">
+        <section class="contact-form py-5 md:px-11 px-5 bg-light3 xl:mx-20 mx-0 rounded-2xl drop-shadow-customShadow -mt-8 z-10 relative">
+            <div class="contact-detail sm:flex-nowrap flex-wrap flex items-center justify-between">
+                <div class="form-group sm:mb-0 mb-4 flex items-center justify-between sm:flex-1 w-full sm:mr-20 mr-0 relative">
+                    <select name="" id="" class="bg-transparent w-full outline-none border-b border-light2 pb-1 text-grey font-sm font-normal">
+                        <option value="">Aantal personen</option>
+                        <option value="">Aantal personen 1</option>
+                        <option value="">Aantal personen 2</option>
+                        <option value="">Aantal personen 3</option>
+                        <option value="">Aantal personen 4</option>
+                    </select>
+                    <img src="../src/img/selector.svg" class="absolute right-0" alt="">
+                </div>
+                <div class="form-group sm:mb-0 mb-4 flex items-center sm:flex-1 w-full sm:mr-20 mr-0 relative">
+                    <input type="text" id="datepicker" placeholder="Selecteer een datum" class="bg-transparent w-full outline-none border-b border-light2 pb-1 text-grey font-sm font-normal">
+                    <img src="../src/img/calender.svg" class="absolute right-0 bottom-2" alt="">
+                </div>
+                <div class="actions sm:flex-1 flex-1 w-full justify-center">
+                    <a href="" class="text-sm font-bold text-white rounded-lg py-2.5 px-4 sm:inline-flex flex items-center justify-center bg-secondary">BEKIJK BESCHIKBAARHEID <img src="../src/img/arrow-right.svg" class="ml-2" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- SMALL CONTACT -->
+
+    <!-- GRID AREA -->
+
+    <section class="grid-area lg:mt-20 mt-12">
+        <div class="container">
+            <div class="grid-area-content flex lg:flex-nowrap flex-wrap justify-between">
+                <div class="info-content lg:py-0 py-6 flex items-center bg-white rounded-tl-largee lg:rounded-tr-none rounded-tr-largee lg:rounded-bl-largee rounded-bl-0 lg:w-1/2 w-full px-6 drop-shadow-customShadow2">
+                    <div>
+                        <h2 class="xl:text-largeFont lg:text-4xl text-3xl font-bold text-brown font-Noto-Serif">Zonnenberg villa</h2>
+                        <h3 class="xl:text-4xl lg:text-3xl text-2xl font-normal text-brown font-Rennie-Bennie opacity-30 pt-1">Genieten midden in de natuur</h3>
+                        <p class="text-sm font-normal text-brown leading-6 pt-2.5">Binnen heb je de akkoorden van de piano. Buiten gaat het geloei van de koeien over in het gehak van de bonte specht. Het zijn de geluiden van het bos en het platteland. Herkenbaar maar nooit saai. Eerlijk is eerlijk. Je komt niet terecht in een afgezonderd walhalla ver van de bewoonde wereld. Want, op loopafstand vind je Ootmarsum. Een gezellige plek om de dag door te brengen. </p>
+                        <div class="actions pt-7">
+                            <a href="" class="text-sm font-bold text-white rounded-lg py-2.5 px-4 inline-flex items-center justify-center bg-light">DIRECT BOEKEN<img src="../src/img/arrow-right.svg" class="ml-2" alt=""></a>
+                            <a href="" class="text-sm sm:mt-0 mt-4 font-bold text-light rounded-lg py-2.5 px-4 inline-flex items-center justify-center border border-light">MEER INFO<img src="../src/img/arrow-right-g.svg" class="ml-2" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture relative lg:w-1/2 w-full">
+                    <div class="absolute lg:-left-16 -left-4 lg:bottom-7 md:bottom-[85%] bottom-2/3">
+                        <img src="../src/img/round-box.svg" class="lg:w-auto w-24" alt="">
+                    </div>
+                    <img src="../src/img/grid-img-1.png" class="lg:w-auto w-full lg:rounded-none rounded-largee" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID AREA -->
+
+    <!-- GRID AREA -->
+
+    <section class="grid-area lg:mt-20 mt-12">
+        <div class="container">
+            <div class="grid-area-content flex lg:flex-nowrap flex-wrap justify-between">
+                <div class="picture relative lg:w-1/2 w-full">
+                    <div class="absolute lg:-right-16 -right-4 lg:bottom-7 md:bottom-[85%] bottom-2/3 z-50">
+                        <img src="../src/img/round-box.svg" class="lg:w-auto w-24" alt="">
+                    </div>
+                    <img src="../src/img/grid-img-2.png" class="lg:w-auto w-full lg:rounded-none rounded-largee" alt="">
+                </div>
+                <div class="info-content lg:py-0 py-6 flex drop-shadow-customShadow2 items-center bg-white lg:rounded-tr-largee rounded-none lg:rounded-bl-none rounded-bl-largee rounded-br-largee lg:w-1/2 w-full lg:pl-[72px] pl-6 lg:pr-12 pr-6">
+                    <div>
+                        <h2 class="xl:text-largeFont lg:text-4xl text-3xl font-bold text-brown font-Noto-Serif">Valkenberg villa</h2>
+                        <h3 class="xl:text-4xl lg:text-3xl text-2xl font-normal text-brown font-Rennie-Bennie opacity-30 pt-1">Nog eventjes wachten…</h3>
+                        <p class="text-sm font-normal text-brown leading-6 pt-2.5">Bij de Valkenberg bosvilla zijn we nog lekker aan het bouwen en sjouwen. 
+                            Vanaf eind 2023 kun je ook hier vertoeven. Voor nu moet je het dus nog even doen met deze foto.</p>
+                        <div class="actions pt-7">
+                            <a href="" class="text-sm font-bold text-white rounded-lg py-2.5 px-4 inline-flex items-center justify-center bg-light">BOEK EEN ANDERE VILLA<img src="../src/img/arrow-right.svg" class="ml-2" alt=""></a>
+                            <a href="" class="text-sm sm:mt-0 mt-4 font-bold text-light rounded-lg py-2.5 px-4 inline-flex items-center justify-center border border-light">MEER INFO<img src="../src/img/arrow-right-g.svg" class="ml-2" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID AREA -->
+
+    <!-- EXPERIENCES -->
+
+    <section class="experiences bg-cover bg-center py-24 bg-experience relative mt-20 overflow-y-hidden">
+        <div class="absolute left-0 -bottom-10">
+            <img src="../src/img/experience-fore.svg" alt="">
+        </div>
+        <div class="container">
+            <div class="experience-content">
+                <div class="experience-slider md:w-1/2 w-3/4 mx-auto">
+                    <div>
+                        <div class="content text-center">
+                            <h2 class="xl:text-largeFont lg:text-4xl text-3xl font-bold text-white font-Noto-Serif">Ervaringen</h2>
+                            <h3 class="xl:text-4xl lg:text-3xl text-2xl font-normal text-white font-Rennie-Bennie opacity-70 pt-1">Wat gasten over ons zeggen</h3>
+                            <p class="text-sm font-normal italic text-white leading-6 pt-2.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus.<br><br> <b> Naam en achternaam via Tripadvisor</b> </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="content text-center">
+                            <h2 class="xl:text-largeFont lg:text-4xl text-3xl font-bold text-white font-Noto-Serif">Ervaringen</h2>
+                            <h3 class="xl:text-4xl lg:text-3xl text-2xl font-normal text-white font-Rennie-Bennie opacity-70 pt-1">Wat gasten over ons zeggen</h3>
+                            <p class="text-sm font-normal italic text-white leading-6 pt-2.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus.<br><br> <b> Naam en achternaam via Tripadvisor</b> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+
+    <!-- DISCOVER AREA -->
+
+    <section class="discover xl:pt-24 lg:pt-20 pt-16">
+        <div class="container">
+            <div class="discover-content">
+                <div class="title text-center">
+                    <h2 class="xl:text-largeFont lg:text-4xl text-3xl font-bold text-brown font-Noto-Serif">Ontdek de omgeving</h2>
+                    <h3 class="xl:text-4xl lg:text-3xl text-2xl font-normal text-brown font-Rennie-Bennie opacity-30 pt-1">Er is veel om te zien en te doen</h3>
+                    <p class="text-sm font-normal text-brown leading-6 pt-2.5 lg:w-1/2 w-full mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus.</p>
+                </div>
+                <div class="grid-area mt-14">
+                    <div class="discover-slider relative right-4">
+                        <div>
+                            <div class="py-4">
+                                <div class="pl-7 discover-box relative drop-shadow-customShadow2">
+                                    <div>
+                                    <div class="absolute left-1/2 -translate-x-1/2 -top-10 z-[99]">
+                                        <img src="../src/img/round-discover1.svg" alt="">
+                                    </div>
+                                </div>
+                                    <div class="picture">
+                                        <img src="../src/img/discover-1.png" class="w-full" alt="">
+                                    </div>
+                                    <div class="info-text lg:py-6 py-4 lg:px-8 md:px-6 px-4 bg-white rounded-bl-largee rounded-br-largee">
+                                        <h4 class="lg:text-lg text-base font-bold text-brown lg:pb-4 pb-3">Door bossen en langs beken</h4>
+                                        <p class="text-sm font-normal text-brown leading-6 xl:pr-11 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. </p>
+                                        <div class="actions mt-4">
+                                            <a href="" class="text-sm font-bold text-light rounded-lg py-2.5 px-4 inline-flex items-center justify-center border border-light">MEER INFO<img src="../src/img/arrow-right-g.svg" class="ml-2" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            <div class="pl-7 drop-shadow-customShadow2">
+                                <div class="discover-box relative">
+                                    <div class="absolute left-1/2 -translate-x-1/2 -top-10 z-[99]">
+                                        <img src="../src/img/round-discover1.svg" alt="">
+                                    </div>
+                                    <div class="picture">
+                                        <img src="../src/img/discover-2.png" class="w-full" alt="">
+                                    </div>
+                                    <div class="info-text lg:py-6 py-4 lg:px-8 md:px-6 px-4 bg-white rounded-bl-largee rounded-br-largee">
+                                        <h4 class="lg:text-lg text-base font-bold text-brown lg:pb-4 pb-3">Offline & ontspannen</h4>
+                                        <p class="text-sm font-normal text-brown leading-6 xl:pr-11 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. </p>
+                                        <div class="actions mt-4">
+                                            <a href="" class="text-sm font-bold text-light rounded-lg py-2.5 px-4 inline-flex items-center justify-center border border-light">MEER INFO<img src="../src/img/arrow-right-g.svg" class="ml-2" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            <div class="pl-7 drop-shadow-customShadow2">
+                                <div class="discover-box relative">
+                                    <div class="absolute left-1/2 -translate-x-1/2 -top-10 z-[99]">
+                                        <img src="../src/img/round-discover1.svg" alt="">
+                                    </div>
+                                    <div class="picture">
+                                        <img src="../src/img/discover-3.png" class="w-full" alt="">
+                                    </div>
+                                    <div class="info-text lg:py-6 py-4 lg:px-8 md:px-6 px-4 bg-white rounded-bl-largee rounded-br-largee">
+                                        <h4 class="lg:text-lg text-base font-bold text-brown lg:pb-4 pb-3">De bewuste bourgondiër</h4>
+                                        <p class="text-sm font-normal text-brown leading-6 xl:pr-11 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. </p>
+                                        <div class="actions mt-4">
+                                            <a href="" class="text-sm font-bold text-light rounded-lg py-2.5 px-4 inline-flex items-center justify-center border border-light">MEER INFO<img src="../src/img/arrow-right-g.svg" class="ml-2" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            <div class="pl-7 drop-shadow-customShadow2">
+                                <div class="discover-box relative">
+                                    <div class="absolute left-1/2 -translate-x-1/2 -top-10 z-[99]">
+                                        <img src="../src/img/round-discover1.svg" alt="">
+                                    </div>
+                                    <div class="picture">
+                                        <img src="../src/img/discover-1.png" class="w-full" alt="">
+                                    </div>
+                                    <div class="info-text lg:py-6 py-4 lg:px-8 md:px-6 px-4 bg-white rounded-bl-largee rounded-br-largee">
+                                        <h4 class="lg:text-lg text-base font-bold text-brown lg:pb-4 pb-3">Door bossen en langs beken</h4>
+                                        <p class="text-sm font-normal text-brown leading-6 xl:pr-11 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. </p>
+                                        <div class="actions mt-4">
+                                            <a href="" class="text-sm font-bold text-light rounded-lg py-2.5 px-4 inline-flex items-center justify-center border border-light">MEER INFO<img src="../src/img/arrow-right-g.svg" class="ml-2" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-4">
+                            <div class="pl-7 drop-shadow-customShadow2">
+                                <div class="discover-box relative">
+                                    <div class="absolute left-1/2 -translate-x-1/2 -top-10">
+                                        <img src="../src/img/round-discover1.svg" alt="">
+                                    </div>
+                                    <div class="picture">
+                                        <img src="../src/img/discover-2.png" class="w-full" alt="">
+                                    </div>
+                                    <div class="info-text lg:py-6 py-4 lg:px-8 md:px-6 px-4 bg-white rounded-bl-largee rounded-br-largee">
+                                        <h4 class="lg:text-lg text-base font-bold text-brown lg:pb-4 pb-3">Door bossen en langs beken</h4>
+                                        <p class="text-sm font-normal text-brown leading-6 xl:pr-11 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. </p>
+                                        <div class="actions mt-4">
+                                            <a href="" class="text-sm font-bold text-light rounded-lg py-2.5 px-4 inline-flex items-center justify-center border border-light">MEER INFO<img src="../src/img/arrow-right-g.svg" class="ml-2" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions flex justify-center items-center">
+                        <a href="" class=" mt-10 text-sm font-bold text-white rounded-lg py-2.5 px-4 inline-flex items-center justify-center bg-secondary">ONTDEK DE OMGEVING<img src="../src/img/arrow-right.svg" class="ml-2" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCOVER AREA -->
+
+    <!-- FOOTER -->
+
+    <footer class="bg-light xl:pt-24 lg:pt-20 md:pt-16 pt-14 relative xl:mt-24 lg:mt-20 sm:mt-16 mt-14">
+        <div class="absolute right-0 bottom-0">
+            <img src="../src/img/foreground.svg" class="md:w-auto w-44" alt="">
+        </div>
+        <div class="container">
+            <div class="footer-wrapper sm:text-left text-center flex lg:flex-nowrap flex-wrap">
+                <div class="lg:w-1/3 sm:w-2/4 w-full sm:mb-0 mb-5">
+                    <div class="footer-box">
+                        <div class="logo">
+                            <a href="">
+                                <img src="../src/img/footer-logo.svg" class="sm:mx-0 mx-auto" alt="">
+                            </a>
+                        </div>
+                        <div class="actions">
+                            <a href="" class="mt-6 text-sm font-bold text-white rounded-lg py-2.5 px-4 inline-flex items-center justify-center bg-secondary">ONZE BOSVILLA’S<img src="../src/img/arrow-right.svg" class="ml-2" alt=""></a>
+                        </div>
+                        <div class="social-icons mt-8 flex sm:justify-start justify-center">
+                            <a href="" class="mr-3">
+                                <img src="../src/img/facebook.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="../src/img/instagram.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-2/4 w-full sm:mb-0 mb-5">
+                    <div class="footer-box">
+                        <h4 class="lg:text-[25px] text-xl font-bold font-Noto-Serif lg:mb-7 mb-2 text-white">Snel naar</h4>
+                        <div class="navigations">
+                            <ul>
+                                <li><a href="" class="md:text-base text-sm font-normal text-white mb-1.5">Home</a></li>
+                                <li><a href="" class="md:text-base text-sm font-normal text-white mb-1.5">De Twentse Bosvilla’s</a></li>
+                                <li><a href="" class="md:text-base text-sm font-normal text-white mb-1.5"> Ontdek de omgeving</a></li>
+                                <li><a href="" class="md:text-base text-sm font-normal text-white mb-1.5">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-2/4 w-full">
+                    <div class="footer-box">
+                        <h4 class="lg:text-[25px] text-xl font-bold font-Noto-Serif lg:mb-7 mb-2 text-white">Contact</h4>
+                        <div class="navigations">
+                            <ul>
+                                <li><a href="" class="md:text-base text-sm font-normal text-white mb-1.5">Adres</a></li>
+                                <li><a href="" class="md:text-base text-sm font-normal text-white mb-1.5">Plaatsnaam</a></li>
+                                <li><a href="" class="inline-flex items-center md:text-base text-sm font-normal text-white mb-1.5"><img src="../src/img/phone.svg" class="mr-2" alt="">Telefoonnummer</a></li>
+                                <li><a href="" class="inline-flex items-center md:text-base text-sm font-normal text-white mb-1.5"><img src="../src/img/mail.svg" class="mr-2" alt="">Emailadres</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="privacy lg:pt-16 md:pt-14 pt-10 sm:text-left text-center md:pb-6 pb-4">
+                <p class="text-white text-xs font-normal">Algemene Voorwaarden <br>
+                    Privacy Statement</p>
+            </div>
+            <div class="footer-bottom text-center bg-brown absolute left-0 right-0 py-4">
+                <p class="text-xs font-normal text-white">© 2022 De Twentse Bosvilla <br>
+                    <u> <a href="" class="text-white">Sitemap</a></u></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS REFERENCE -->
+
+
+    <!-- SCRIPT JS -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../src/js/main.js"></script>
+</body>
+</html>

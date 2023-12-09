@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CUSTOM STYLES */
+
+.container{
+    max-width: 1200px !important;
+}
+
+body{
+    overflow: hidden !important;
+}
+
+/* OPEN MENU STYLES */
+
+.mobile-navigation.active{
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    z-index: 99;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* SLICK ARROWS */
+
+.slick-arrow::before{
+    content: "" !important;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 10px !important;
+    height: 20px !important;
+}
+
+.slick-prev::before{
+    background-image: url(../src/img/slider-left.svg);
+    opacity: 1 !important;
+}
+
+.slick-next::before{
+    background-image: url(../src/img/slider-right.svg);
+    opacity: 1 !important;
+}
+
+.discover-slider .slick-prev::before{
+    background-image: url(../src/img/discover-arrow-left.svg) !important;
+}
+
+.discover-slider .slick-next::before{
+    background-image: url(../src/img/discover-arrow-right.svg) !important;
+}
+
+.slick-prev{
+    left: -50px !important;
+    z-index: 99 !important;
+}
+
+.slick-next{
+    right: -50px !important;
+}
+
+.discover-slider .slick-next{
+    right: -80px !important;
+}
+
+/* DOTS */
+
+.slick-dots li button:before{
+    color: #BFBFBF !important;
+    opacity: 1 !important;
+    font-size: 8px !important;
+    margin: 2px !important;
+}
+
+.slick-dots{
+    bottom: -45px !important;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #899C88 !important;
+}
+
+.about-slider .slick-slide{
+    margin : 0px 30px !important;
+}
+
+.discover-slider .slick-list{
+    overflow: visible !important;
+}
+
+.discover-slider .slick-slide {
+    opacity: 0;
+    visibility: hidden;
+}
+  
+.discover-slider .slick-slide.slick-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:870px){
+    .discover-slider h4{
+        height: 60px;
+    }
+}
+
+@media(max-width:576px){
+    .about-slider .slick-slide{
+        margin: 0px 18px !important;
+    }
+    .discover-slider .slick-prev{
+        left: 10px !important;
+    }
+    .discover-slider .slick-next{
+        right: -30px !important;
+    }
+}
+
+@media(max-width:480px){
+    .discover-slider h4{
+        height: auto;
+    }
+}
